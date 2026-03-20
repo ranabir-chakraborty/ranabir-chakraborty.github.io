@@ -11,9 +11,9 @@ title_separator          : "|"
 name                     : &name "Dr. Ranabir Chakraborty"
 description              : &description "Scientist (Soil Sciences) | ICAR-IIWM | GHG emissions, Remote Sensing, Water management, SWAT modelling, Nutrient dynamics, and Sustainable agriculture"
 
-url                      : "https://ranabir-chakraborty.github.io"
-baseurl                  : "/ranabir-academic-site"
-repository               : "ranabir-chakraborty/ranabir-academic-site"
+url                      : "https://ranabirchakraborty.com"
+baseurl                  : ""
+repository               : "ranabir-chakraborty/ranabir-chakraborty.github.io"
 
 # ================================
 # Author Profile (Sidebar)
