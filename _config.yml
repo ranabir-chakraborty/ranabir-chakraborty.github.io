@@ -64,10 +64,10 @@ kramdown:
 collections:
   publications:
     output: true
-    permalink: /:collection/:path/
+    permalink: /publications/:path/
   tools:
     output: true
-    permalink: /:tools/:path/
+    permalink: /tools/:path/
 
 defaults:
   - scope:
