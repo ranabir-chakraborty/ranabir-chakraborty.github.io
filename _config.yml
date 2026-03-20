@@ -1,0 +1,172 @@
+# Welcome to Jekyll!
+# This config file controls global site settings
+# ================================
+# Basic Site Settings
+# ================================
+
+locale                   : "en-US"
+site_theme               : "default"  # options: default, air, sunrise, mint, dirt, contrast
+title                    : "Dr. Ranabir Chakraborty"
+title_separator          : "|"
+name                     : &name "Dr. Ranabir Chakraborty"
+description              : &description "Scientist (Soil Sciences) | ICAR-IIWM | GHG emissions, Remote Sensing, Water management, SWAT modelling, Nutrient dynamics, and Sustainable agriculture"
+
+url                      : "https://ranabir-chakraborty.github.io"
+baseurl                  : "/ranabir-academic-site"
+repository               : "ranabir-chakraborty/ranabir-academic-site"
+
+# ================================
+# Author Profile (Sidebar)
+# ================================
+
+author:
+avatar           : "profile.png"
+name             : "Dr. Ranabir Chakraborty"
+bio              : "Scientist at ICAR-IIWM working on GHG emissions, remote sensing, water management, SWAT modelling, nutrient dynamics, and sustainable agriculture."
+location         : "Bhubaneswar, India"
+employer         : "ICAR-IIWM"
+email            : "[ranabir.chakraborty@icar.org.in](mailto:ranabir.chakraborty@icar.org.in)"
+
+# Academic profiles
+
+googlescholar    : "https://scholar.google.com/citations?user=zPshd0oAAAAJ"
+orcid            : "https://orcid.org/0000-0002-0875-8399"
+researchgate     : "https://www.researchgate.net/profile/Ranabir-Chakraborty-3"
+scopus           : "https://www.scopus.com/authid/detail.uri?authorId=57217273725"
+
+# Development
+
+github           : "ranabir-chakraborty"
+
+# Social
+
+linkedin         : "ranabir003"
+twitter          : "ranabir_003"
+
+# ================================
+# Publication Categories
+# ================================
+
+publication_category:
+  books:
+    title: "Books"
+  manuscripts:
+    title: "Journal Articles"
+  conferences:
+    title: "Conference Papers"
+
+# ================================
+# Site Settings
+# ================================
+
+breadcrumbs              : false
+words_per_minute         : 160
+future                   : true
+read_more                : "disabled"
+
+# ================================
+# Feed
+# ================================
+
+atom_feed:
+hide                   : false
+
+# ================================
+# Reading Files
+# ================================
+
+include:
+
+* .htaccess
+* _pages
+* files
+
+exclude:
+
+* node_modules
+* vendor
+* tmp
+* log
+* "*.sublime-project"
+* "*.sublime-workspace"
+
+# ================================
+# Markdown Processing
+# ================================
+
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+input: GFM
+
+# ================================
+# Collections (CORE STRUCTURE)
+# ================================
+
+collections:
+publications:
+output: true
+permalink: /:collection/:path/
+portfolio:
+output: true
+permalink: /:collection/:path/
+
+# ================================
+# Defaults
+# ================================
+
+defaults:
+
+* scope:
+  path: ""
+  type: pages
+  values:
+  layout: single
+  author_profile: true
+
+* scope:
+  path: ""
+  type: publications
+  values:
+  layout: single
+  author_profile: true
+
+* scope:
+  path: ""
+  type: portfolio
+  values:
+  layout: single
+  author_profile: true
+
+# ================================
+# Sass
+# ================================
+
+sass:
+sass_dir: _sass
+style: compressed
+
+# ================================
+# Output
+# ================================
+
+permalink: /:categories/:title/
+timezone: Etc/UTC
+
+# ================================
+# Plugins (GitHub Pages safe)
+# ================================
+
+plugins:
+
+* jekyll-feed
+* jekyll-sitemap
+* jemoji
+
+# ================================
+# HTML Compression
+# ================================
+
+compress_html:
+clippings: all
