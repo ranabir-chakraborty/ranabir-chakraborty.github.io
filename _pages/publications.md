@@ -5,7 +5,6 @@ permalink: /publications/
 author_profile: true
 ---
 
-## Publications
 You can explore my research work through the following platforms:
 
 <br>

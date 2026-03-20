@@ -3,7 +3,6 @@ layout: single
 author_profile: true
 ---
 
-## Welcome
 
 I am **Dr. Ranabir Chakraborty**, a Soil Scientist at ICAR-IIWM, Bhubaneswar. My work focuses on greenhouse gas emissions, remote sensing, water management, SWAT modelling, nutrient dynamics, and sustainable agriculture.
 
