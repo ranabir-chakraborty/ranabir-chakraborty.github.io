@@ -1,51 +1,30 @@
-# Welcome to Jekyll!
-# This config file controls global site settings
-# ================================
-# Basic Site Settings
-# ================================
+locale: "en-US"
+site_theme: "default"
 
-locale                   : "en-US"
-site_theme               : "default"  # options: default, air, sunrise, mint, dirt, contrast
-title                    : "Dr. Ranabir Chakraborty"
-title_separator          : "|"
-name                     : &name "Dr. Ranabir Chakraborty"
-description              : &description "Scientist (Soil Sciences) | ICAR-IIWM | GHG emissions, Remote Sensing, Water management, SWAT modelling, Nutrient dynamics, and Sustainable agriculture"
+title: "Dr. Ranabir Chakraborty"
+title_separator: "|"
+name: "Dr. Ranabir Chakraborty"
+description: "Scientist (Soil Sciences) | ICAR-IIWM | GHG emissions, Remote Sensing, Water management, SWAT modelling, Nutrient dynamics, and Sustainable agriculture"
 
-url                      : "https://ranabirchakraborty.com"
-baseurl                  : ""
-repository               : "ranabir-chakraborty/ranabir-chakraborty.github.io"
-
-# ================================
-# Author Profile (Sidebar)
-# ================================
+url: "https://ranabirchakraborty.com"
+baseurl: ""
+repository: "ranabir-chakraborty/ranabir-chakraborty.github.io"
 
 author:
-avatar           : "profile.png"
-name             : "Dr. Ranabir Chakraborty"
-bio              : "Scientist at ICAR-IIWM working on GHG emissions, remote sensing, water management, SWAT modelling, nutrient dynamics, and sustainable agriculture."
-location         : "Bhubaneswar, India"
-employer         : "ICAR-IIWM"
-email            : "[ranabir.chakraborty@icar.org.in](mailto:ranabir.chakraborty@icar.org.in)"
+  avatar: "profile.png"
+  name: "Dr. Ranabir Chakraborty"
+  bio: "Scientist at ICAR-IIWM working on GHG emissions, remote sensing, water management, SWAT modelling, nutrient dynamics, and sustainable agriculture."
+  location: "Bhubaneswar, India"
+  employer: "ICAR-IIWM"
+  email: "ranabir.chakraborty@icar.org.in"
 
-# Academic profiles
-
-googlescholar    : "https://scholar.google.com/citations?user=zPshd0oAAAAJ"
-orcid            : "https://orcid.org/0000-0002-0875-8399"
-researchgate     : "https://www.researchgate.net/profile/Ranabir-Chakraborty-3"
-scopus           : "https://www.scopus.com/authid/detail.uri?authorId=57217273725"
-
-# Development
-
-github           : "ranabir-chakraborty"
-
-# Social
-
-linkedin         : "ranabir003"
-twitter          : "ranabir_003"
-
-# ================================
-# Publication Categories
-# ================================
+  googlescholar: "https://scholar.google.com/citations?user=zPshd0oAAAAJ"
+  orcid: "https://orcid.org/0000-0002-0875-8399"
+  researchgate: "https://www.researchgate.net/profile/Ranabir-Chakraborty-3"
+  scopus: "https://www.scopus.com/authid/detail.uri?authorId=57217273725"
+  github: "ranabir-chakraborty"
+  linkedin: "ranabir003"
+  twitter: "ranabir_003"
 
 publication_category:
   books:
@@ -55,118 +34,74 @@ publication_category:
   conferences:
     title: "Conference Papers"
 
-# ================================
-# Site Settings
-# ================================
-
-breadcrumbs              : false
-words_per_minute         : 160
-future                   : true
-read_more                : "disabled"
-
-# ================================
-# Feed
-# ================================
+breadcrumbs: false
+words_per_minute: 160
+future: true
+read_more: "disabled"
 
 atom_feed:
-hide                   : false
-
-# ================================
-# Reading Files
-# ================================
+  hide: false
 
 include:
-
-* .htaccess
-* _pages
-* files
+  - .htaccess
+  - _pages
+  - files
 
 exclude:
-
-* node_modules
-* vendor
-* tmp
-* log
-* "*.sublime-project"
-* "*.sublime-workspace"
-
-# ================================
-# Markdown Processing
-# ================================
+  - node_modules
+  - vendor
+  - tmp
+  - log
+  - "*.sublime-project"
+  - "*.sublime-workspace"
 
 markdown: kramdown
 highlighter: rouge
 
 kramdown:
-input: GFM
-
-# ================================
-# Collections (CORE STRUCTURE)
-# ================================
+  input: GFM
 
 collections:
-publications:
-output: true
-permalink: /:collection/:path/
-portfolio:
-output: true
-permalink: /:collection/:path/
-
-# ================================
-# Defaults
-# ================================
+  publications:
+    output: true
+    permalink: /:collection/:path/
+  portfolio:
+    output: true
+    permalink: /:collection/:path/
 
 defaults:
+  - scope:
+      path: ""
+      type: pages
+    values:
+      layout: single
+      author_profile: true
 
-* scope:
-  path: ""
-  type: pages
-  values:
-  layout: single
-  author_profile: true
+  - scope:
+      path: ""
+      type: publications
+    values:
+      layout: single
+      author_profile: true
 
-* scope:
-  path: ""
-  type: publications
-  values:
-  layout: single
-  author_profile: true
-
-* scope:
-  path: ""
-  type: portfolio
-  values:
-  layout: single
-  author_profile: true
-
-# ================================
-# Sass
-# ================================
+  - scope:
+      path: ""
+      type: portfolio
+    values:
+      layout: single
+      author_profile: true
 
 sass:
-sass_dir: _sass
-style: compressed
-
-# ================================
-# Output
-# ================================
+  sass_dir: _sass
+  style: compressed
 
 permalink: /:categories/:title/
 timezone: Etc/UTC
 
-# ================================
-# Plugins (GitHub Pages safe)
-# ================================
-
 plugins:
-
-* jekyll-feed
-* jekyll-sitemap
-* jemoji
-
-# ================================
-# HTML Compression
-# ================================
+  - jekyll-feed
+  - jekyll-sitemap
+  - jemoji
 
 compress_html:
-clippings: all
+  clippings: all
