@@ -5,8 +5,6 @@ permalink: /about/
 author_profile: true
 ---
 
-## About Me
-
 I am **Dr. Ranabir Chakraborty**, a Soil Scientist at ICAR-Indian Institute of Water Management (ICAR-IIWM), Bhubaneswar.
 
 My research focuses on understanding and improving agricultural systems through **soil science, environmental monitoring, and data-driven modelling approaches**.
