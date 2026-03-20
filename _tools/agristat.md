@@ -2,7 +2,7 @@
 
 title: "AgriStat – Agricultural Statistical Tool"
 excerpt: "Web-based tool for ANOVA, CRD, RBD and post-hoc tests in agricultural experiments."
-collection: portfolio
+collection: tools
 ---------------------
 
 AgriStat is a web-based statistical tool developed for agricultural researchers and students.

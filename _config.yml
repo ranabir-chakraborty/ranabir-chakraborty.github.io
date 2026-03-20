@@ -65,9 +65,9 @@ collections:
   publications:
     output: true
     permalink: /:collection/:path/
-  portfolio:
+  tools:
     output: true
-    permalink: /:collection/:path/
+    permalink: /:tools/:path/
 
 defaults:
   - scope:
@@ -86,7 +86,7 @@ defaults:
 
   - scope:
       path: ""
-      type: portfolio
+      type: tools
     values:
       layout: single
       author_profile: true
